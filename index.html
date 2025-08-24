@@ -22,12 +22,26 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
             <div class="container-fluid">
-
-                <!-- Logo -->
-                <a class="navbar-brand d-flex align-items-center" href="#">
+  <!-- Logo -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top py-3">
+  <div class="container-fluid">
+<a class="navbar-brand d-flex align-items-center" href="#">
                     <i class="bi bi-bag-heart-fill me-2"></i>
                     <span>FashionStore</span>
                 </a>
+    <!-- Nav links (next to logo) -->
+                    <ul class="navbar-nav me-3">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="abaya.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="offer.html">Offers</a></li>
+                    </ul>
+  </div>
+</nav>
+
+
+              
+               
 
                 <!-- Mobile Toggle -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -37,13 +51,7 @@
                 <!-- Navbar Links + Search + Profile -->
                 <div class="collapse navbar-collapse" id="navbarNav">
 
-                    <!-- Nav links (next to logo) -->
-                    <ul class="navbar-nav me-3">
-                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="abaya.html">Shop</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="offer.html">Offers</a></li>
-                    </ul>
+                
 
                     <!-- Search Bar -->
                     <form class="d-flex me-auto">
@@ -150,9 +158,77 @@
     </div>
 
     <!-- Alert -->
-    <div class="alert alert-success text-center m-3" role="alert">
-        🎉 Big Sale! Flat 50% off on selected fashion items. Hurry up!
-    </div><br><br><br><br>
+    <div class="alert alert-success text-center m-5 p-5 fs-3 fw-bold" role="alert">
+  🎉 Big Sale! Flat 50% off on selected fashion items. Hurry up!
+</div>
+<br><br><br><br>
+
+
+
+    <div class="container my-5">
+  <div class="row g-4">
+
+    <div class="col-12 col-sm-6 col-md-3">
+      <a href="design1.html" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm">
+          <img src="design1.jpg" class="card-img-top fixed-img" alt="Abaya">
+          <div class="card-body text-center">
+            <h5 class="card-title">Tunics</h5>
+            <p class="card-text"> offer price: $29.99</p>
+            <button class="btn btn-primary w-100">Shop now</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-3">
+      <a href="design2.html" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm">
+          <img src="design2.jpg" class="card-img-top fixed-img" alt="Western">
+          <div class="card-body text-center">
+            <h5 class="card-title">Clothing sets</h5>
+            <p class="card-text"> offer price: $89.99</p>
+            <button class="btn btn-primary w-100">Shop now</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-3">
+      <a href="design3.html" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm">
+          <img src="design3.jpg" class="card-img-top fixed-img" alt="Kurta Sets">
+          <div class="card-body text-center">
+            <h5 class="card-title">Dresses</h5>
+            <p class="card-text"> offer price: $59.99</p>
+            <button class="btn btn-primary w-100">Shop now</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-3">
+      <a href="design4.html" class="text-decoration-none text-dark">
+        <div class="card h-100 shadow-sm">
+          <img src="design4.jpg" class="card-img-top fixed-img" alt="Kurta Sets">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sweat shirts</h5>
+            <p class="card-text"> offer price: $59.99</p>
+            <button class="btn btn-primary w-100">Shop now</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div><br><br><br><br>
+
+<style>
+  .fixed-img {
+    height: 500px;       /* make all images same height */
+    object-fit: cover;   /* fit nicely without distortion */
+  }
+</style>
 
 
     <!-- Footer -->
