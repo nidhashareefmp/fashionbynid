@@ -2,60 +2,229 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fashion By Nid</title>
-  <style>
-    /* Cover section with background */
-    #cover {
-      height: 100vh;
-      background: url('logo3.jpg') no-repeat center center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      color: pink;
-      text-align: center;
-      position: relative;
-    }
-
-    #cover h1 {
-      font-size: 4rem;
-      font-weight: bold;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 10px rgba(194, 189, 193, 0.5);
-    }
-
-    #cover .btn {
-      font-size: 1.5rem;
-      padding: 10px 30px;
-      border-radius: 30px;
-      background: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Small text bottom-right */
-    #cover small {
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
-      font-size: 14px;
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store by nidhaghan👻</title>
+    <link rel="stylesheet" href="task.html">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  
 </head>
 
 <body>
-  <!-- Cover Page -->
-  <section id="cover">
-    <a href="web.html" class="btn btn-light btn-lg mt-3">Shop Now</a>
-    <small>By Nidhaghan</small>
-  </section>
+
+    </section>
+
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <i class="bi bi-bag-heart-fill me-2"></i>
+                    <span>FashionStore</span>
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links + Search + Profile -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <!-- Nav links (next to logo) -->
+                    <ul class="navbar-nav me-3">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="abaya.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="offer.html">Offers</a></li>
+                    </ul>
+
+                    <!-- Search Bar -->
+                    <form class="d-flex me-auto">
+                        <input class="form-control me-2" type="search" placeholder="Search products..."
+                            aria-label="Search">
+                        <button class="btn btn-light" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+
+                    <!-- Button (left side of profile) with Tooltip -->
+                    <button class="btn btn-success me-3" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        title="View your past orders">
+                        My Orders
+                    </button>
+
+
+                    <!-- Profile Icon with Dropdown -->
+<div class="dropdown">
+  <a href="#" class="d-flex align-items-center text-white text-decoration-none"
+     id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <!-- Profile photo (opens dropdown only) -->
+    <img src="nidha.jpg" alt="Profile" width="35" height="35" class="rounded-circle me-2">
+  </a>
+
+  <!-- Dropdown Menu -->
+  <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="profileDropdown">
+    <li>
+      <!-- Trigger modal from dropdown -->
+      <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#profileModal">
+        My Profile
+      </a>
+    </li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Logout</a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+                </div>
+                
+            </div>
+
+
+
+        </nav>
+    </div>
+<!-- Profile Modal -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabel">My Profile</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body text-center">
+        <img src="nidha.jpg" alt="Profile" width="80" height="80"
+             class="rounded-circle mb-3">
+        <h6>Nidhaghan</h6>
+        <p class="text-muted">Fashion Enthusiast</p>
+      </div>
+
+      <!-- Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"
+          data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Update Profile</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+
+    <!-- Carousel -->
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="GOLDEN HOUR (2).jpg" class="d-block w-100 img-fluid" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="sale1.jpg" class="d-block w-100 img-fluid" alt="Banner 2">
+            </div>
+            <div class="carousel-item">
+                <img src="offer2.jpg" class="d-block w-100 img-fluid" alt="Banner 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Alert -->
+    <div class="alert alert-success text-center m-3" role="alert">
+        🎉 Big Sale! Flat 50% off on selected fashion items. Hurry up!
+    </div><br><br><br><br>
+
+
+    <!-- Footer -->
+        <footer class="bg-dark text-light pt-4 mt-5">
+            <div class="container">
+                <div class="row">
+
+                    <!-- About -->
+                    <div class="col-md-4 mb-3">
+                        <h5>FashionStore</h5>
+                        <p>Bringing you the latest trends in fashion at affordable prices. Shop with confidence and
+                            style.</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                            <li><a href="#shop" class="text-light text-decoration-none">Shop</a></li>
+                            <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                            <li><a href="#" class="text-light text-decoration-none" data-bs-toggle="modal"
+                                    data-bs-target="#promoModal">Offers</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="col-md-4 mb-3">
+                        <h5>Follow Us</h5>
+                        <div class="d-flex align-items-center">
+                            <a href="https://www.facebook.com/" target="_blank" class="text-light me-3 fs-4">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="text-light me-3 fs-4">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.twitter.com/" target="_blank" class="text-light me-3 fs-4">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="text-light fs-4">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <hr class="border-light">
+                <p class="text-center mb-0">&copy; 2025 FashionStore by nidhaghan. All Rights Reserved.</p>
+            </div>
+        </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Enable Tooltip & Popover -->
+    <script>
+        document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+            new bootstrap.Tooltip(el);
+        });
+        document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => {
+            new bootstrap.Popover(el);
+        });
+    </script>
+    <script>
+        // Enable all tooltips
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        // Enable all popovers
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+
 </body>
 
 </html>
